@@ -1,0 +1,10 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot gpio_mux_tb_func_synth xil_defaultlib.gpio_mux_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [/home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/1_mux/1_mux.srcs/sim_1/new/tb_peri_mux_io.v:31]
+ERROR: [VRFC 10-2063] Module <gpio_mux_dut> not found while processing module instance <'Undefined'>
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

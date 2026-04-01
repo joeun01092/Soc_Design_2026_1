@@ -1,0 +1,537 @@
+/*
+
+AMD Vivado v2024.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 5239630 on Fri Nov 08 22:34:34 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+Process ID (PID): 2569598
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Mar 25 14:06:08 KST 2026
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Red Hat Enterprise Linux release 8.1 (Ootpa)
+OS Version: 4.18.0-147.el8.x86_64
+OS Architecture: amd64
+Available processors (cores): 80
+LSB Release Description: NAME=Red Hat Enterprise Linux
+
+Display: localhost:22.0
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: true
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	std010
+User home directory: /home_cds/std010
+User working directory: /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.2/data:/tools/Xilinx/Vivado/2024.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.2/bin
+
+Vivado preferences file: /home_cds/std010/.Xilinx/Vivado/2024.2/vivado.xml
+Vivado preferences directory: /home_cds/std010/.Xilinx/Vivado/2024.2/
+Vivado layouts directory: /home_cds/std010/.Xilinx/Vivado/2024.2/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	/home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/vivado.log
+Vivado journal file: 	/home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-2569598-ky-cds-semi
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.2/data:/tools/Xilinx/Vivado/2024.2/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Rhel/8:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Rhel:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2024.2/bin:/tools/Xilinx/Vivado/2024.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4:ky-cds-semi_1774415154_2569500
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.2/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.2/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/csh
+XILINX: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis/2024.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.2
+XILINX_SDK: /tools/Xilinx/Vitis/2024.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2024.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,470 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,470 MB. GUI used memory: 64 MB. Current time: 3/25/26, 2:06:10 PM KST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // t (PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 23 seconds
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// Elapsed time: 34 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "led_control"); // ad (PAResourceOtoP.ProjectNameChooser_PROJECT_NAME)
+// Elapsed time: 51 seconds
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// Elapsed time: 184 seconds
+selectRadioButton(PAResourceItoN.NewProjectWizard_CONFIGURE_EXAMPLE_DESIGN_CREATE, "Example Project. Create a new Vivado project from a predefined template."); // b (PAResourceItoN.NewProjectWizard_CONFIGURE_EXAMPLE_DESIGN_CREATE)
+selectRadioButton(PAResourceItoN.NewProjectWizard_RTL_PROJECT_YOU_WILL_BE_ABLE_TO_ADD, "RTL Project. You will be able to add sources, create block designs in IP Integrator, generate IP, run RTL analysis, synthesis, implementation, design planning and analysis."); // b (PAResourceItoN.NewProjectWizard_RTL_PROJECT_YOU_WILL_BE_ABLE_TO_ADD)
+selectRadioButton(PAResourceItoN.NewProjectWizard_RTL_PROJECT_YOU_WILL_BE_ABLE_TO_ADD, "RTL Project. You will be able to add sources, create block designs in IP Integrator, generate IP, run RTL analysis, synthesis, implementation, design planning and analysis."); // b (PAResourceItoN.NewProjectWizard_RTL_PROJECT_YOU_WILL_BE_ABLE_TO_ADD)
+// Elapsed time: 10 seconds
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// Elapsed time: 67 seconds
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// [GUI Memory]: 105 MB (+107784kb) [00:07:21]
+// [Engine Memory]: 1,470 MB (+1390107kb) [00:07:21]
+// Elapsed time: 11 seconds
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 400 seconds
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g (PAResourceOtoP.PartChooser_TABBED_PANE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,495 MB. GUI used memory: 66 MB. Current time: 3/25/26, 2:20:05 PM KST
+// Elapsed time: 34 seconds
+selectButton(PAResourceAtoD.BoardChooser_REFRESH, "Refresh", "New Project"); // a (PAResourceAtoD.BoardChooser_REFRESH)
+// TclEventType: LOAD_FEATURE
+// TclEventType: XHUB_XSTORE_DIR_CHANGE
+// TclEventType: XHUB_XSTORE_REFRESH
+// Tcl Message: xhub::refresh_catalog [xhub::get_xstores xilinx_board_store] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,497 MB. GUI used memory: 67 MB. Current time: 3/25/26, 2:21:05 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,497 MB. GUI used memory: 67 MB. Current time: 3/25/26, 2:21:35 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,497 MB. GUI used memory: 67 MB. Current time: 3/25/26, 2:22:05 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,497 MB. GUI used memory: 67 MB. Current time: 3/25/26, 2:22:35 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,497 MB. GUI used memory: 67 MB. Current time: 3/25/26, 2:23:05 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,497 MB. GUI used memory: 67 MB. Current time: 3/25/26, 2:23:35 PM KST
+// TclEventType: XHUB_XSTORE_REFRESH
+// Tcl Message: xhub::refresh_catalog: Time (s): cpu = 00:00:08 ; elapsed = 00:03:11 . Memory (MB): peak = 7766.750 ; gain = 0.000 ; free physical = 309310 ; free virtual = 351613 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/a.c': 03m:10s
+// Elapsed time: 190 seconds
+dismissDialog("Refresh Catalog"); // bh (Refresh Catalog Progress)
+// TclEventType: XHUB_XITEM_INSTALL
+// Tcl Message: set_param board.repoPaths {/home_cds/std010/.Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} 
+// Tcl Message: xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:zybo-z7-20:1.1] 
+// Tcl Message: INFO: [xhubtcl-76-32]   INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:zybo-z7-20:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zybo"); // OverlayTextField (PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD)
+// TclEventType: BOARD_CATALOG_MODIFIED
+// [GUI Memory]: 131 MB (+21128kb) [00:17:56]
+// [Engine Memory]: 1,611 MB (+70641kb) [00:17:56]
+// TclEventType: BOARD_CATALOG_MODIFIED
+// TclEventType: XHUB_XITEM_INSTALL
+// Tcl Message: INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:zybo-z7-20:1.1 has been installed successfully. 
+// Tcl Message: INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+dismissDialog("Install"); // bh (Install Progress)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zybo Z7-20 ; Zybo Z7-20 ; Zybo Z7-20 ; digilentinc.com ; 1.1 ; Zybo Z7-20 ; 400 ; B.2 ; 125 ; 53200 ; 106400 ; 140 ; 0 ; 220 ; 32 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 2, "Zybo Z7-20", 0, false); // n (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zybo Z7-20 ; Zybo Z7-20 ; Zybo Z7-20 ; digilentinc.com ; 1.1 ; Zybo Z7-20 ; 400 ; B.2 ; 125 ; 53200 ; 106400 ; 140 ; 0 ; 220 ; 32 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 2, "Zybo Z7-20", 1, false); // n (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zybo Z7-20 ; Zybo Z7-20 ; Zybo Z7-20 ; digilentinc.com ; 1.1 ; Zybo Z7-20 ; 400 ; B.2 ; 125 ; 53200 ; 106400 ; 140 ; 0 ; 220 ; 32 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 2, "Zybo Z7-20", 0, false); // n (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project led_control /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control -part xc7z020clg400-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,723 MB (+32366kb) [00:18:58]
+// WARNING: HEventQueue.dispatchEvent() is taking  1458 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project] 
+// Elapsed time: 50 seconds
+selectButton("FINISH", "Finish", "New Project"); // JButton (FINISH)
+// 'g' command handler elapsed time: 1084 seconds
+dismissDialog("Create Project"); // bh (Create Project Progress)
+dismissDialog("New Project"); // f (dialog0)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,736 MB. GUI used memory: 73 MB. Current time: 3/25/26, 2:25:00 PM KST
+// WARNING: HEventQueue.dispatchEvent() is taking  1036 ms.
+// Elapsed time: 1361 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// Elapsed time: 39 seconds
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+// [GUI Memory]: 156 MB (+19401kb) [00:42:54]
+// Elapsed time: 28 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "led_control.v"); // ad (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // a (RDIResource.BaseDialog_OK)
+// Tcl Command: 'file mkdir /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/sources_1/new'
+dismissDialog("Create Source File"); // k (dialog2)
+// Tcl Message: file mkdir /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/sources_1/new 
+// Elapsed time: 10 seconds
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 86 seconds
+dismissDialog("Add Sources"); // c (dialog1)
+// Tcl Message: close [ open /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/sources_1/new/led_control.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/sources_1/new/led_control.v 
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Define Module"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes", "Define Module"); // JButton (OptionPane.button)
+dismissDialog("Define Module"); // n (dialog3)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:30s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,758 MB. GUI used memory: 73 MB. Current time: 3/25/26, 2:49:30 PM KST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:34s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:36s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:38s
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 429 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led_control (led_control.v)]", 1, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led_control (led_control.v)]", 1, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// [Engine Memory]: 1,812 MB (+3024kb) [00:50:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,842 MB. GUI used memory: 76 MB. Current time: 3/25/26, 2:56:55 PM KST
+selectCodeEditor("led_control.v", 124, 386); // ae (led_control.v)
+// Elapsed time: 124 seconds
+selectCodeEditor("led_control.v", 83, 358); // ae (led_control.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:02s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,852 MB. GUI used memory: 76 MB. Current time: 3/25/26, 3:00:05 PM KST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:10s
+// Elapsed time: 113 seconds
+selectCodeEditor("led_control.v", 123, 432); // ae (led_control.v)
+selectCodeEditor("led_control.v", 98, 441); // ae (led_control.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:36s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,872 MB. GUI used memory: 77 MB. Current time: 3/25/26, 3:04:35 PM KST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:42s
+// Elapsed time: 392 seconds
+selectCodeEditor("led_control.v", 146, 434); // ae (led_control.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 42m:36s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 42m:40s
+// Elapsed time: 19 seconds
+selectCodeEditor("led_control.v", 211, 434); // ae (led_control.v)
+selectCodeEditor("led_control.v", 174, 452); // ae (led_control.v)
+selectCodeEditor("led_control.v", 172, 433); // ae (led_control.v)
+selectCodeEditor("led_control.v", 157, 438); // ae (led_control.v)
+// Elapsed time: 31 seconds
+selectCodeEditor("led_control.v", 172, 403); // ae (led_control.v)
+selectCodeEditor("led_control.v", 143, 443); // ae (led_control.v)
+// Elapsed time: 110 seconds
+selectCodeEditor("led_control.v", 47, 262); // ae (led_control.v)
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Run Linter]", 12, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// TclEventType: MSGMGR_REFRESH_MSG
+// Tcl Message: synth_design -top led_control -part xc7z020clg400-1 -lint  
+// Tcl Message: Command: synth_design -top led_control -part xc7z020clg400-1 -lint Starting synth_design Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020' 
+// Tcl Message: INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020' INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes. INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes INFO: [Synth 8-7075] Helper process launched with PID 2632042 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,245 MB. GUI used memory: 76 MB. Current time: 3/25/26, 3:11:05 PM KST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8448.465 ; gain = 305.887 ; free physical = 302140 ; free virtual = 345770 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Clean up Linter database... 
+// TclEventType: LINTER_RUN
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'led_control' [/home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/sources_1/new/led_control.v:23] INFO: [Synth 8-6155] done synthesizing module 'led_control' (1#1) [/home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/sources_1/new/led_control.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8529.441 ; gain = 386.863 ; free physical = 302150 ; free virtual = 345783 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 37-85] Total of 0 linter message(s) generated. INFO: [Synth 37-45] Linter Run Finished! 
+// Tcl Message: Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8544.285 ; gain = 401.707 ; free physical = 302121 ; free virtual = 345754 
+// Tcl Message: INFO: [Common 17-83] Releasing license: Synthesis 
+// Tcl Message: 9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8544.293 ; gain = 401.715 ; free physical = 302110 ; free virtual = 345744 
+// Tcl Message: INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1613.170; main = 1418.001; forked = 195.169 INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 9479.766; main = 8544.289; forked = 935.477 
+// 'a' command handler elapsed time: 6 seconds
+// [Engine Memory]: 2,291 MB (+407579kb) [01:05:06]
+dismissDialog("Run Linter"); // bh (Run Linter Progress)
+// Elapsed time: 11 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Elaborate Design"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Elaborate Design"); // u (dialog4)
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7z020clg400-1 Top: led_control 
+// TclEventType: ELABORATE_START
+// TclEventType: MSGMGR_REFRESH_MSG
+// HMemoryUtils.trashcanNow. Engine heap size: 2,349 MB. GUI used memory: 77 MB. Current time: 3/25/26, 3:11:35 PM KST
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,556 MB. GUI used memory: 77 MB. Current time: 3/25/26, 3:11:40 PM KST
+// [Engine Memory]: 2,559 MB (+160549kb) [01:05:40]
+// Xgd.load filename: /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/./.Xil/Vivado-2569598-ky-cds-semi/xc7z020_detail.xgd_1D60F74A elapsed time: 0.5s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,746 MB (+62183kb) [01:05:42]
+// WARNING: HEventQueue.dispatchEvent() is taking  1167 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes. 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 8643.516 ; gain = 77.844 ; free physical = 300023 ; free virtual = 343658 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'led_control' [/home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/sources_1/new/led_control.v:23] INFO: [Synth 8-6155] done synthesizing module 'led_control' (0#1) [/home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/sources_1/new/led_control.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8723.484 ; gain = 157.812 ; free physical = 299909 ; free virtual = 343545 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8738.328 ; gain = 172.656 ; free physical = 299885 ; free virtual = 343521 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8738.328 ; gain = 172.656 ; free physical = 299885 ; free virtual = 343521 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8738.336 ; gain = 0.000 ; free physical = 299882 ; free virtual = 343517 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8789.320 ; gain = 0.000 ; free physical = 299657 ; free virtual = 343300 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 8996.664 ; gain = 430.992 ; free physical = 298779 ; free virtual = 342427 
+// Tcl Message: 6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 8996.664 ; gain = 449.367 ; free physical = 298779 ; free virtual = 342427 
+// Tcl Message: INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1810.071; main = 1810.071; forked = 0.000 INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 8989.672; main = 8989.672; forked = 0.000 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Elapsed time: 13 seconds
+dismissDialog("Open Elaborated Design"); // bh (Open Elaborated Design Progress)
+// [GUI Memory]: 177 MB (+14432kb) [01:06:12]
+// Elapsed time: 42 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 13, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // g (dialog5)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 40 
+// Tcl Message: [Wed Mar 25 15:12:28 2026] Launched synth_1... Run output will be captured here: /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 35 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Synthesis Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Synthesis Completed"); // W.a (dialog6)
+// Elapsed time: 70 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 14); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 14); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 27, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,816 MB. GUI used memory: 88 MB. Current time: 3/25/26, 3:14:29 PM KST
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// [Engine Memory]: 2,887 MB (+3709kb) [01:08:30]
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8998.609 ; gain = 0.000 ; free physical = 295962 ; free virtual = 339759 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2024.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9042.449 ; gain = 0.000 ; free physical = 295850 ; free virtual = 339646 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+dismissDialog("Open Synthesized Design"); // bh (Open Synthesized Design Progress)
+// RouteApi::initDelayMediator elapsed time: 7.2s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 3,253 MB (+232946kb) [01:09:16]
+// Elapsed time: 1211 seconds
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ai (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ai (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ai (PAResourceItoN.MainMenuMgr_VIEW, View)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ai (PAResourceItoN.MainMenuMgr_VIEW, View)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ai (PAResourceItoN.MainMenuMgr_HELP, Help)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ai (PAResourceItoN.MainMenuMgr_HELP, Help)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ai (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ai (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ai (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+selectMenuItem(RDIResource.MainWinMenuMgr_LOAD, "I/O Planning"); // aq (RDIResource.MainWinMenuMgr_LOAD, I/O Planning)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ai (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,285 MB. GUI used memory: 97 MB. Current time: 3/25/26, 3:34:55 PM KST
+// Elapsed time: 10 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (4) ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 1); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sw (4) ; IN ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 6); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// PAPropertyPanels.initPanels (sw[3]) elapsed time: 0.3s
+// Elapsed time: 43 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sw[3] ; IN ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 7, "sw[3]", 0, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// Elapsed time: 17 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sw[3] ; IN ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 7, (String) null, 5, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {sw[3]} T16 
+// Elapsed time: 25 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sw[2] ; IN ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 8, (String) null, 5, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {sw[2]} W13 
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sw[1] ; IN ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 9, (String) null, 5, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {sw[1]} P15 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sw[0] ; IN ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 10, (String) null, 5, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {sw[0]} G15 
+// Elapsed time: 26 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led[3] ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 2, (String) null, 5, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[3]} D18 
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led[2] ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 3, (String) null, 5, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[2]} G14 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led[1] ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 4, (String) null, 5, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[1]} M15 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led[0] ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 5, (String) null, 5, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[0]} M14 
+// Elapsed time: 232 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (4) ; OUT ;  ;  ;  ;  ; true ; 35 ; default (LVCMOS18) ; 1.8 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 1, "default (LVCMOS18)", 8, true); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (4) ; OUT ;  ;  ;  ;  ; true ; 35 ; default (LVCMOS18) ; 1.8 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 1, "default (LVCMOS18)", 8, true); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE) - Node
+// TclEventType: SIGNAL_MODIFY
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led[3] ; OUT ;  ;  ;  ; D18 ; true ; 35 ; default (LVCMOS18) ; 1.8 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 2, "default (LVCMOS18)", 8, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// Tcl Message: set_property IOSTANDARD {} [get_ports [list {led[3]} {led[2]} {led[1]} {led[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (4) ; OUT ;  ;  ;  ;  ; true ; 35 ; default (LVCMOS18) ; 1.8 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 1, "default (LVCMOS18)", 8, true); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {led[3]} {led[2]} {led[1]} {led[0]}]] 
+// TclEventType: SIGNAL_MODIFY
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sw (4) ; IN ;  ;  ;  ;  ; true ; (Multiple) ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 6, "default (LVCMOS18)", 8, true); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE) - Node
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {led[3]} {led[2]} {led[1]} {led[0]}]] 
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {sw[3]} {sw[2]} {sw[1]} {sw[0]}]] 
+// TclEventType: SIGNAL_MODIFY
+// Elapsed time: 17 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (0) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 11, "Scalar ports (0)", 0, false); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE)
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {sw[3]} {sw[2]} {sw[1]} {sw[0]}]] 
+// Elapsed time: 231 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sw (4) ; IN ;  ;  ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 6, "(Multiple)", 7, true); // o (PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE) - Node
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+selectButton(RDIResource.BaseDialog_OK, "OK", "Out of Date Design"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Out of Date Design"); // u (dialog7)
+// Elapsed time: 49 seconds
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "led_control"); // ad (PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Save Constraints"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: file mkdir /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/constrs_1/new 
+// Tcl Message: close [ open /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/constrs_1/new/led_control.xdc w ] 
+// Tcl Message: add_files -fileset constrs_1 /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/constrs_1/new/led_control.xdc 
+// Tcl Message: set_property target_constrs_file /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/constrs_1/new/led_control.xdc [current_fileset -constrset] 
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Constraints"); // a (dialog8)
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints -force 
+// 'f' command handler elapsed time: 54 seconds
+dismissDialog("Save Constraints"); // bh (Save Constraints Progress)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, led_control.xdc]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, led_control.xdc]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, led_control.xdc]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,358 MB. GUI used memory: 99 MB. Current time: 3/25/26, 3:47:15 PM KST
+// WARNING: HEventQueue.dispatchEvent() is taking  3224 ms.
+// Elapsed time: 114 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes", "Synthesis is Out-of-date"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("Synthesis is Out-of-date"); // u (dialog9)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1160] Copying file /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.runs/synth_1/led_control.dcp to /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// 'cM' command handler elapsed time: 7 seconds
+dismissDialog("Launch Runs"); // cP (dialog10)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 40 
+// Tcl Message: [Wed Mar 25 15:49:13 2026] Launched synth_1... Run output will be captured here: /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.runs/synth_1/runme.log [Wed Mar 25 15:49:13 2026] Launched impl_1... Run output will be captured here: /home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/led_control/led_control.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 125 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Bitstream Generation Completed"); // W.a (dialog11)

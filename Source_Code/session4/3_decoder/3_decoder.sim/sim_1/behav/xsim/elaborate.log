@@ -1,0 +1,9 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_bcd_to_7seg_behav xil_defaultlib.tb_bcd_to_7seg xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <bcd_to_7seg> not found while processing module instance <uut> [/home_cds/std010/SoC_Design_2026_1/Soc_Design_2026_1/Source_Code/session4/3_decoder/3_decoder.srcs/sim_1/new/tb_bcdtoseg.v:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
